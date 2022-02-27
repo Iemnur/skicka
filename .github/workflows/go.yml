@@ -21,11 +21,12 @@ jobs:
     - name: Build
       run: |
         go install github.com/google/skicka@latest
-        c:
-        cd "C:\Users\runneradmin\go"
-        ls
-        cd "bin"
-        ls
+    - name: Upload dist
+      uses: actions/upload-artifact@v2
+      with:
+        name: dist
+        path: |
+          ${{env.GOPATH}}/bin/*.*
 
     #- name: Test
     #  run: go test -v ./...
