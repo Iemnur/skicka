@@ -20,8 +20,8 @@ jobs:
 
     - name: Build
       run: |
-        $GOPATH=.\
-        $GOBIN=.\
+        $GOPATH=".\"
+        $GOBIN=".\"
         go install github.com/google/skicka@latest
         ls
 
