@@ -21,9 +21,10 @@ jobs:
     - name: Build
       run: |
         go install github.com/google/skicka@latest
-        cd $GOPATH
+        c:
+        cd "C:\Users\runneradmin\go"
         ls
-        cd $GOBIN
+        cd "bin"
         ls
 
     #- name: Test
