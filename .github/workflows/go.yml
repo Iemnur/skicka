@@ -21,6 +21,7 @@ jobs:
     - name: Build
       run: |
         go get github.com/google/skicka
+        ls
         go build -v ./...
 
     #- name: Test
