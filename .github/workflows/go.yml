@@ -20,11 +20,11 @@ jobs:
 
     - name: Build
       run: |
-        go install github.com/google/skicka/gdrive
-        go install golang.org/x/crypto/pbkdf2
-        go install golang.org/x/net/context
-        go install golang.org/x/oauth2
-        go install gopkg.in/gcfg.v1
+        go install github.com/google/skicka/gdrive@latest
+        go install golang.org/x/crypto/pbkdf2@latest
+        go install golang.org/x/net/context@latest
+        go install golang.org/x/oauth2@latest
+        go install gopkg.in/gcfg.v1@latest
         ls
         go build -v skicka.go
 
