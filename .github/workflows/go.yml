@@ -20,13 +20,9 @@ jobs:
 
     - name: Build
       run: |
-        go install github.com/google/skicka/gdrive@latest
-        go install golang.org/x/crypto/pbkdf2@latest
-        go install golang.org/x/net/context@latest
-        go install golang.org/x/oauth2@latest
-        go install gopkg.in/gcfg.v1@latest
+        set GOBIN=.\
+        go install github.com/google/skicka@latest
         ls
-        go build -v skicka.go
 
     #- name: Test
     #  run: go test -v ./...
