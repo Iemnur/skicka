@@ -20,9 +20,10 @@ jobs:
 
     - name: Build
       run: |
-        $GOPATH=".\"
-        $GOBIN=".\"
         go install github.com/google/skicka@latest
+        cd $GOPATH
+        ls
+        cd $GOBIN
         ls
 
     #- name: Test
